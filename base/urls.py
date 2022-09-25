@@ -9,6 +9,9 @@ urlpatterns = [
 
     path("",views.home,name="home"),
     path("room/<str:pk>/",views.room,name="room"),
+    path("room/join/<str:pk>/", views.join, name="join"),
+    path("room/leave/<str:pk>/", views.leave, name="leave"),
+
     path("profile/<str:pk>/", views.userProfile, name="user-profile"),
 
     path('create-room/',views.createroom,name='create-room'),
