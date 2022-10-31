@@ -41,7 +41,9 @@ INSTALLED_APPS = [
     'base.apps.BaseConfig',
 
     'rest_framework',
-    "corsheaders"
+    "corsheaders",
+    "channels",
+
 ]
 
 MIDDLEWARE = [
@@ -78,6 +80,15 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'SocialChatRoom.wsgi.application'
+
+ASGI_APPLICATION = 'SocialChatRoom.asgi.application'
+#
+# CHANNEL_LAYERS = {
+#     'default': {
+#         'BACKEND': 'channels.layers.InMemoryChannelLayer',
+#     },
+# }
+#
 
 
 # Database
